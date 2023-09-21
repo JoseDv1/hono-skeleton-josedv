@@ -9,6 +9,7 @@ const app = new Hono().basePath('/api/v1')
 
 // Routes
 app.get('/', (ctx): Response => ctx.json({ message: 'Hello World!' }))
+app.all("*", (ctx): Response => ctx.json({ message: 'Not Found' }, 404)) // 404
 
 // Config Port
 export default {
