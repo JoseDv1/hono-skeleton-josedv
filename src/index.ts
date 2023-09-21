@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 
 // Init Hono
-const app = new Hono()
+const app = new Hono().basePath('/api/v1')
 
 // Middlewares
 //import { cors } from 'hono/cors'
