@@ -1,0 +1,19 @@
+{
+	"version": "0.1",
+	"author": {
+		"name": "JoseDv1",
+		"email": "jose@josedv.com",
+		"url": "https://josedv.com"
+	},
+	"scripts": {
+		"dev": "bun run --watch src/index.ts",
+		"dev:hot": "bun run --hot src/index.ts",
+		"start": "bun run src/index.ts"
+	},
+	"dependencies": {
+		"hono": "^3.6.0"
+	},
+	"devDependencies": {
+		"bun-types": "^0.6.2"
+	}
+}
