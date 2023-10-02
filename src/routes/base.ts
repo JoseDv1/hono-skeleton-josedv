@@ -2,9 +2,9 @@ import { Hono } from "hono";
 
 import { getController, deleteController, getByIdController, postController, putController } from "@/controllers/baseController";
 
-export const RouterName: Hono = new Hono();
+export const RouterBase: Hono = new Hono();
 
-RouterName
+RouterBase
 	.get("/", getController)
 	.get("/:id", getByIdController)
 	.post("/", postController)
